@@ -1,0 +1,80 @@
+{
+    "expo": {
+      "name": "AuroraWake",
+      "slug": "aurora-wake",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/icon.png",
+      "userInterfaceStyle": "automatic",
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#6b7fff"
+      },
+      "updates": {
+        "fallbackToCacheTimeout": 0
+      },
+      "assetBundlePatterns": [
+        "**/*"
+      ],
+      "ios": {
+        "supportsTablet": true,
+        "bundleIdentifier": "com.aurorawake.app",
+        "buildNumber": "1.0.0",
+        "infoPlist": {
+          "UIBackgroundModes": [
+            "audio",
+            "fetch",
+            "remote-notification"
+          ]
+        }
+      },
+      "android": {
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/adaptive-icon.png",
+          "backgroundColor": "#6b7fff"
+        },
+        "package": "com.aurorawake.app",
+        "versionCode": 1,
+        "permissions": [
+          "INTERNET",
+          "VIBRATE",
+          "WAKE_LOCK",
+          "RECEIVE_BOOT_COMPLETED",
+          "SCHEDULE_EXACT_ALARM"
+        ]
+      },
+      "web": {
+        "favicon": "./assets/favicon.png"
+      },
+      "plugins": [
+        [
+          "expo-notifications",
+          {
+            "icon": "./assets/notification-icon.png",
+            "color": "#6b7fff",
+            "sounds": [
+              "./assets/sounds/gentle-chime.mp3",
+              "./assets/sounds/morning-birds.mp3",
+              "./assets/sounds/soft-bells.mp3",
+              "./assets/sounds/zen-gong.mp3",
+              "./assets/sounds/piano-wake.mp3"
+            ]
+          }
+        ]
+      ],
+      "notification": {
+        "icon": "./assets/notification-icon.png",
+        "color": "#6b7fff",
+        "androidMode": "default",
+        "androidCollapsedTitle": "AuroraWake",
+        "iosDisplayInForeground": true
+      },
+      "scheme": "aurorawake",
+      "extra": {
+        "eas": {
+          "projectId": "YOUR_EAS_PROJECT_ID"
+        }
+      }
+    }
+  }
